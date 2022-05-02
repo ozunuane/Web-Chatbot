@@ -1,5 +1,5 @@
 FROM node:12.10.0-alpine
-
+RUN npm install --save-dev prettier@>=1.13.0 
 WORKDIR /usr/app
 
 COPY package*.json ./
