@@ -9,6 +9,7 @@ COPY . .
 
 EXPOSE 5000
 
+RUN npm audit fix
 RUN npm run build
-Run npm audit fix
+
 CMD ["npm", "build"]
